@@ -1,7 +1,11 @@
 package Assgmnt.FrmwrkMag.AbsComp;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Iterator;
+import java.util.Properties;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -23,10 +27,12 @@ public class AbstractComp {
 		// TODO Auto-generated constructor stub
 		this.driver= driver;
 	}
-	By wNew = By.xpath("//a[@id='ui-id-3']/span[1]");
-	@FindBy(xpath="//a[@id='ui-id-3']/span[1]")
+	By wNew = By.id("ui-id-3");
+	@FindBy(id="ui-id-3")
 	WebElement whatsNewLnk;
-	
+	/*By wNew = By.xpath("//li[@class ='level0 nav-1 category-item first active level-top ui-menu-item']/a");
+	@FindBy(xpath="//li[@class ='level0 nav-1 category-item first active level-top ui-menu-item']/a")
+	WebElement whatsNewLnk;*/
 	
 	public void waitForElementToAppear(By findBy)
 	{
@@ -42,19 +48,25 @@ public class AbstractComp {
 	 wait.until(ExpectedConditions.visibilityOf(ele));
 	}
 	
-	public void goToWatches()
-	{
-		 driver.switchTo().newWindow(WindowType.TAB); Set<String> windows =
+	public void goToWatches() throws IOException
+	{		
+		
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\Assgmnt\\FrmwrkMag\\resources\\GlobalData.properties");
+	 	prop.load(fis);
+	 	String wtchLnk = prop.getProperty("watchlink");
+	 	driver.switchTo().newWindow(WindowType.TAB); Set<String> windows =
 		 driver.getWindowHandles();
 		 Iterator<String> it = (Iterator)windows.iterator();
 		 pid = it.next(); 
 		 String chld1 = it.next();
 		 driver.switchTo().window(chld1);
-		 driver.get("https://magento.softwaretestingboard.com/gear.html");
+		 driver.get(wtchLnk);
 		
 	}
-	public void goToWhtsNew()
+	public void goToWhtsNew() throws InterruptedException
 	{
+	
 		waitForElementToAppear(wNew);
 		whatsNewLnk.click();
 	}

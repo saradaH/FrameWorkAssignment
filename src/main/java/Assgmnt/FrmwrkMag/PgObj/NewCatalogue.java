@@ -29,9 +29,9 @@ public class NewCatalogue extends AbstractComp {
 	
 	@FindBy(xpath="//div[@class='product-item-info']")
 	 List<WebElement> newItems;
-	@FindBy (id="option-label-size-143-item-168")
+	@FindBy (xpath="(//div[@class='swatch-option text'])[3]")
 	WebElement sizeNew;
-	@FindBy (id="option-label-color-93-item-57")
+	@FindBy (xpath="(//div[@class='swatch-option color'])[2]")
 	WebElement colNew;
 	@FindBy (css=".action.tocart.primary")
 	WebElement cartBtn;
@@ -40,8 +40,8 @@ public class NewCatalogue extends AbstractComp {
 	By addtnMsg   = By.xpath("//div/div/div[@data-ui-id='message-success']/div");
 	By itemLink = By.cssSelector("a.product-item-link");
 	By addToCart = By.cssSelector(".action.tocart.primary");
-	By colItemNew = By.id("option-label-color-93-item-57");
-	By sizeItemNew = By.id("option-label-size-143-item-168");
+	By colItemNew = By.xpath("(//div[@class='swatch-option color'])[2]");
+	By sizeItemNew = By.xpath("(//div[@class='swatch-option text'])[3]");
 	public List<WebElement> getProductList()
 	{
 		  JavascriptExecutor js = (JavascriptExecutor) driver;

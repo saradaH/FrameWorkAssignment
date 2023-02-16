@@ -71,10 +71,10 @@ public class CheckOut extends AbstractComp {
 		dropdownSt.selectByIndex(1); 
 		postCodeFld.sendKeys(postCode);
 		telephoneFld.sendKeys(telephone);
-		System.out.println("radio");
+	
 		actions.moveToElement(tableRate).perform();
 		tableRate.click();
-		System.out.println("afterradio");
+	
 		actions.moveToElement(nextBtn).perform();
 		nextBtn.click();
 		
@@ -83,13 +83,13 @@ public class CheckOut extends AbstractComp {
 	//tableRate.click();
 	waitForElementToAppear(nextBtnWt);
 	nextBtn.click();
-	System.out.println("nextbtnclicked");
+	
 	waitForElementToAppear(finalCrtValWt);
 	String finalSubTot= finalCrtSubTot.getText();
 	waitForElementToAppear(placeOrderBtnWt);
-	System.out.println("placeorder appeared");
+	
 	//actions.moveToElement(placeOrderBtn).perform();
-	System.out.println(finalSubTot+"finalSub");
+	
 	Thread.sleep(5000);
 	placeOrderBtn.click();
 	waitForElementToAppear(conFrmMsgWt);

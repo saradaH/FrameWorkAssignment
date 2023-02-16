@@ -15,15 +15,4 @@
       </class> <!-- Assgmnt.FrmwrkMag.Tests.AddtoCart -->
     </classes>
   </test> <!-- AddtoCart(failed) -->
-  <test thread-count="5" name="Login Test(failed)">
-    <classes>
-      <class name="Assgmnt.FrmwrkMag.Tests.AppLogin">
-        <methods>
-          <include name="launchApplication"/>
-          <include name="appLogin"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Assgmnt.FrmwrkMag.Tests.AppLogin -->
-    </classes>
-  </test> <!-- Login Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

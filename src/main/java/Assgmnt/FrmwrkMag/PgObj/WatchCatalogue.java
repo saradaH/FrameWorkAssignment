@@ -24,7 +24,7 @@ public class WatchCatalogue extends AbstractComp{
 	}
 	
 	
-	@FindBy (xpath="//a[@id='ui-id-6']")
+	@FindBy (xpath="(//ul[@class='ui-menu ui-widget ui-widget-content ui-corner-all']/li)[4]")
 	WebElement gearLink;
 	@FindBy(linkText="Watches")
 	WebElement watches;
@@ -40,7 +40,7 @@ public class WatchCatalogue extends AbstractComp{
 	 List<WebElement> watchList;
 	@FindBy (id ="product-addtocart-button")
 	 WebElement cartBtn;
-	By gearLinkWt = By.xpath("//a[@id='ui-id-6']");
+	By gearLinkWt = By.xpath("(//ul[@class='ui-menu ui-widget ui-widget-content ui-corner-all']/li)[4] ");
 	By watchesWt = By.linkText("Watches");
 	By priceWt = By.xpath("//div[normalize-space()='Price']");
 	By MaterialWt = By.xpath("//div[normalize-space()='Material']");

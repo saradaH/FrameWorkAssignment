@@ -1,61 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-31T23:26:10 IST" name="Suite" finished-at="2023-01-31T23:27:31 IST" duration-ms="81859">
+  <suite started-at="2023-02-17T00:37:13 IST" name="Suite" finished-at="2023-02-17T00:38:24 IST" duration-ms="70845">
     <groups>
     </groups>
-    <test started-at="2023-01-31T23:26:10 IST" name="AddtoCart" finished-at="2023-01-31T23:26:36 IST" duration-ms="26733">
+    <test started-at="2023-02-17T00:37:13 IST" name="AddtoCart" finished-at="2023-02-17T00:38:24 IST" duration-ms="70845">
       <class name="Assgmnt.FrmwrkMag.Tests.AddtoCart">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.AddtoCart@1fb669c3]" started-at="2023-01-31T23:26:10 IST" name="launchApplication" finished-at="2023-01-31T23:26:23 IST" duration-ms="13190" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.AddtoCart@1fb669c3]" started-at="2023-02-17T00:37:13 IST" name="launchApplication" finished-at="2023-02-17T00:37:21 IST" duration-ms="7645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="addToCart()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.AddtoCart@1fb669c3]" started-at="2023-01-31T23:26:23 IST" name="addToCart" description="Addition of specific items to cart" finished-at="2023-01-31T23:26:36 IST" duration-ms="13124" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="addToCart()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.AddtoCart@1fb669c3]" started-at="2023-02-17T00:37:21 IST" name="addToCart" description="Addition of specific items to cart" finished-at="2023-02-17T00:38:23 IST" duration-ms="62596" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element click intercepted: Element <button type="submit" title="Add to Cart" class="action primary tocart" id="product-addtocart-button" disabled="">...</button> is not clickable at point (873, 530). Other element would receive the click: <div class="actions">...</div>
-  (Session info: chrome=109.0.5414.120)
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [073598ac2a021e286091c92f62609783, clickElement {id=ba87e36e-b6f6-41b6-9cb1-2ab463e872cd}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Narayan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64720}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64720/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (073598ac2a021e286091c92f62609783)] -> css selector: .action.tocart.primary]
-Session ID: 073598ac2a021e286091c92f62609783]]>
+              <![CDATA[The following asserts failed:
+expected [$220.00] but found [$185.80]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" title="Add to Cart" class="action primary tocart" id="product-addtocart-button" disabled="">...</button> is not clickable at point (873, 530). Other element would receive the click: <div class="actions">...</div>
-  (Session info: chrome=109.0.5414.120)
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [073598ac2a021e286091c92f62609783, clickElement {id=ba87e36e-b6f6-41b6-9cb1-2ab463e872cd}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Narayan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64720}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64720/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (073598ac2a021e286091c92f62609783)] -> css selector: .action.tocart.primary]
-Session ID: 073598ac2a021e286091c92f62609783
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at Assgmnt.FrmwrkMag.PgObj.NewCatalogue.addNewItemtoCart(NewCatalogue.java:69)
-at Assgmnt.FrmwrkMag.Tests.AddtoCart.addToCart(AddtoCart.java:38)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [$220.00] but found [$185.80]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at Assgmnt.FrmwrkMag.TestComponents.BaseTest.assertMessages(BaseTest.java:73)
+at Assgmnt.FrmwrkMag.Tests.AddtoCart.addToCart(AddtoCart.java:48)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -86,110 +54,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.AddtoCart@1fb669c3]" started-at="2023-01-31T23:26:36 IST" name="tearDown" finished-at="2023-01-31T23:26:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.AddtoCart@1fb669c3]" started-at="2023-02-17T00:38:24 IST" name="tearDown" finished-at="2023-02-17T00:38:24 IST" duration-ms="240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Assgmnt.FrmwrkMag.Tests.AddtoCart -->
     </test> <!-- AddtoCart -->
-    <test started-at="2023-01-31T23:26:37 IST" name="Login Test" finished-at="2023-01-31T23:27:10 IST" duration-ms="32651">
-      <class name="Assgmnt.FrmwrkMag.Tests.AppLogin">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.AppLogin@484094a5]" started-at="2023-01-31T23:26:37 IST" name="launchApplication" finished-at="2023-01-31T23:26:46 IST" duration-ms="8851" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="appLogin()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.AppLogin@484094a5]" started-at="2023-01-31T23:26:46 IST" name="appLogin" description="Successful Login" finished-at="2023-01-31T23:26:52 IST" duration-ms="5655" status="FAIL">
-          <exception class="java.lang.ArrayIndexOutOfBoundsException">
-            <message>
-              <![CDATA[Index 1 out of bounds for length 1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-at Assgmnt.FrmwrkMag.PgObj.login.succSignName(login.java:77)
-at Assgmnt.FrmwrkMag.Tests.AppLogin.appLogin(AppLogin.java:18)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- appLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.AppLogin@484094a5]" started-at="2023-01-31T23:26:52 IST" name="tearDown" finished-at="2023-01-31T23:26:52 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.AppLogin@484094a5]" started-at="2023-01-31T23:26:52 IST" name="launchApplication" finished-at="2023-01-31T23:27:02 IST" duration-ms="10045" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="invalidLogin()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.AppLogin@484094a5]" started-at="2023-01-31T23:27:02 IST" name="invalidLogin" description="UnSuccessful Login" finished-at="2023-01-31T23:27:10 IST" duration-ms="7535" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.AppLogin@484094a5]" started-at="2023-01-31T23:27:10 IST" name="tearDown" finished-at="2023-01-31T23:27:10 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Assgmnt.FrmwrkMag.Tests.AppLogin -->
-    </test> <!-- Login Test -->
-    <test started-at="2023-01-31T23:27:10 IST" name="Create Account" finished-at="2023-01-31T23:27:31 IST" duration-ms="21414">
-      <class name="Assgmnt.FrmwrkMag.Tests.CreateAcc">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.CreateAcc@524f3b3a]" started-at="2023-01-31T23:27:10 IST" name="launchApplication" finished-at="2023-01-31T23:27:16 IST" duration-ms="5883" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="createAccount()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.CreateAcc@524f3b3a]" started-at="2023-01-31T23:27:16 IST" name="createAccount" description="New Account Creation" finished-at="2023-01-31T23:27:21 IST" duration-ms="5514" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.CreateAcc@524f3b3a]" started-at="2023-01-31T23:27:21 IST" name="tearDown" finished-at="2023-01-31T23:27:21 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.CreateAcc@524f3b3a]" started-at="2023-01-31T23:27:21 IST" name="launchApplication" finished-at="2023-01-31T23:27:27 IST" duration-ms="5809" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="invalidAccData()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.CreateAcc@524f3b3a]" started-at="2023-01-31T23:27:27 IST" name="invalidAccData" description="Account Creation Failure" finished-at="2023-01-31T23:27:31 IST" duration-ms="4196" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidAccData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Assgmnt.FrmwrkMag.Tests.CreateAcc@524f3b3a]" started-at="2023-01-31T23:27:31 IST" name="tearDown" finished-at="2023-01-31T23:27:31 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Assgmnt.FrmwrkMag.Tests.CreateAcc -->
-    </test> <!-- Create Account -->
   </suite> <!-- Suite -->
 </testng-results>

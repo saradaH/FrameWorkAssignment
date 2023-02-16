@@ -11,7 +11,7 @@
 
     </classes>
   </test> <!-- Test -->
-    <test thread-count="5" name="Login Test">
+   <test thread-count="5" name="Login Test">
     <classes>
    
       <class name="Assgmnt.FrmwrkMag.Tests.AppLogin"/>

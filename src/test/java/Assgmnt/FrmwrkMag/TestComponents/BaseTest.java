@@ -31,6 +31,7 @@ public class BaseTest {
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\Assgmnt\\FrmwrkMag\\resources\\GlobalData.properties");
 		 prop.load(fis);
 		 String browserName = prop.getProperty("browser");
+
 		 
 		 if(browserName.equalsIgnoreCase("chrome"))
 		 {
